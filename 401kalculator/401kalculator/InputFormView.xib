@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputFormView" customModule="_01kalculator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="403"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Gu1-Oe-c0H">
+                    <rect key="frame" x="39" y="158.5" width="314" height="86.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhV-Yr-XOP">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="26.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueQ-TF-uTq">
+                            <rect key="frame" x="0.0" y="56.5" width="314" height="30"/>
+                            <subviews>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bia-TC-R7l">
+                                    <rect key="frame" x="240.5" y="4" width="15" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCr-Ru-wLp">
+                                    <rect key="frame" x="78.5" y="0.0" width="157" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="kQh-fV-V6j"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no"/>
+                                </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huf-5N-03L">
+                                    <rect key="frame" x="62" y="4" width="11.5" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="bia-TC-R7l" firstAttribute="centerY" secondItem="tCr-Ru-wLp" secondAttribute="centerY" id="50s-lc-wD9"/>
+                                <constraint firstItem="huf-5N-03L" firstAttribute="centerY" secondItem="bia-TC-R7l" secondAttribute="centerY" id="KdM-25-wSe"/>
+                                <constraint firstAttribute="height" secondItem="tCr-Ru-wLp" secondAttribute="height" id="LXj-rm-nQl"/>
+                                <constraint firstItem="tCr-Ru-wLp" firstAttribute="centerX" secondItem="ueQ-TF-uTq" secondAttribute="centerX" id="i8w-JW-DZM"/>
+                                <constraint firstItem="tCr-Ru-wLp" firstAttribute="centerY" secondItem="ueQ-TF-uTq" secondAttribute="centerY" id="iR4-W9-ab4"/>
+                                <constraint firstItem="tCr-Ru-wLp" firstAttribute="width" secondItem="ueQ-TF-uTq" secondAttribute="width" multiplier="0.5" id="jZe-4h-xgf"/>
+                                <constraint firstItem="tCr-Ru-wLp" firstAttribute="leading" secondItem="huf-5N-03L" secondAttribute="trailing" constant="5" id="kAY-50-9jk"/>
+                                <constraint firstItem="bia-TC-R7l" firstAttribute="leading" secondItem="tCr-Ru-wLp" secondAttribute="trailing" constant="5" id="lX7-sV-q1B"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Gu1-Oe-c0H" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="72B-af-X13"/>
+                <constraint firstItem="Gu1-Oe-c0H" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="Ctr-gi-OQG"/>
+                <constraint firstItem="Gu1-Oe-c0H" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="PhU-6G-utp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="containerStackView" destination="Gu1-Oe-c0H" id="Bjj-2m-HAS"/>
+                <outlet property="dollarSignLabel" destination="huf-5N-03L" id="AQM-wa-ha8"/>
+                <outlet property="percentSignLabel" destination="bia-TC-R7l" id="MW1-Y2-esq"/>
+                <outlet property="questionLabel" destination="BhV-Yr-XOP" id="avx-rU-dRt"/>
+                <outlet property="textField" destination="tCr-Ru-wLp" id="fPv-AQ-Gq1"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="272.11394302848578"/>
+        </view>
+    </objects>
+</document>
